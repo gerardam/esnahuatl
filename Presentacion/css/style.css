@@ -1,0 +1,64 @@
+﻿/*==== \ / ============================================== == ==
+//==== 101 =====|<> Es-Nahuatl v:1.0 - 20/08/2016 </>|=== = ===
+//== =10101= ===|    { The bug develop & network }   |=== === =
+//== =01010= ===| ( ){ ISC Gerardo Álvarez Mendoza } |=== == ==
+//==== 010 ============================================== = =*/
+body {
+  height: 100%;
+}
+.Contenido {
+  height: 100%;
+  position: relative;
+  padding-bottom: 30px;
+}
+.logoDBug {
+  height: 60px;
+}
+.footer {
+  bottom: 0;
+}
+@media (max-width: 992px) {
+  .logoBug {
+    text-align: center;
+  }
+}
+.card-panel .card-image .logoC {
+  max-width: 200px;
+  max-height: 200px;
+}
+.panelInfo {
+  min-height: 250px;
+  min-width: 230px;
+}
+@media (max-width: 900px) {
+  .container .row .col.m4 {
+    width: 100%;
+  }
+  .container .row .col.m8 {
+    width: 100%;
+  }
+}
+.lnkAccion {
+  padding-bottom: 15px;
+}
+.lnkAccion .card-panel {
+  height: 50px;
+  padding-top: 5px;
+}
+.input-field input[type=text].error {
+  border-bottom: 1px solid #d50000;
+  box-shadow: 0 1px 0 0 #d50000;
+}
+/*Pagina default*/
+.card .card-image img {
+  min-width: 200px;
+  max-width: 250px;
+}
+@media (max-width: 600px) {
+  .card .card-image .imgIniIzq {
+    display: none;
+  }
+  .col.m6 .col.m12 {
+    width: 100%;
+  }
+}

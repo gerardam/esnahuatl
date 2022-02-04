@@ -1,0 +1,32 @@
+[
+  {
+    "outputFileName": "js/default.min.js",
+    "inputFiles": [
+      "js/default.js"
+    ]
+  },
+  {
+    "outputFileName": "js/ValidationCamp.min.js",
+    "inputFiles": [
+      "js/ValidationCamp.js"
+    ]
+  },
+  {
+    "outputFileName": "css/style.min.css",
+    "inputFiles": [
+      "css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "js/PAG_02.min.js",
+    "inputFiles": [
+      "js/PAG_02.js"
+    ]
+  },
+  {
+    "outputFileName": "js/PAG_03.min.js",
+    "inputFiles": [
+      "js/PAG_03.js"
+    ]
+  }
+]

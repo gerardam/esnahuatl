@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="DicEspNahuatl.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Español-Nahuatl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/css/style.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/materialize.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager ID="smrTemplate" ScriptMode="Release" AsyncPostBackTimeout="360000" EnablePageMethods="true" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/js/jquery-2.1.4.min.js" />
+                <asp:ScriptReference Path="~/js/jquery.validate.js" />
+                <asp:ScriptReference Path="~/js/jquery.ui.datepicker.js" />
+                <asp:ScriptReference Path="~/js/jquery-ui.interactions.1.11.4.js" />
+                <asp:ScriptReference Path="~/js/materialize.min.js" />
+                <asp:ScriptReference Path="~/js/ValidationCamp.min.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper light-green accent-4 white-text">
+                    <a href="#" class="logoBug brand-logo right">Es-Nahuatl</a>
+                    <a class="button-collapse" href="#" data-activates="nav-mobile">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="left hide-on-med-and-down white-text">
+                        <li>
+                            <asp:HyperLink ID="hplHome" runat="server" NavigateUrl="~/"><img src="../img/logoDBUG.png" alt="logoDBug" class="logoDBug" /></asp:HyperLink>
+                        </li>
+                    </ul>
+                    <ul class="left side-nav " id="nav-mobile">
+                        <li class="amber white-text">
+                            <asp:HyperLink ID="hplInicio" runat="server" NavigateUrl="~/"><img src="img/logoDBUG.png" alt="logoDBug" class="logoDBug" /></asp:HyperLink>
+                        </li>
+                        <li class="white-text">
+                            <a class="waves-effect waves-light modal-trigger" href="#modalAcercaDe">Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="container Contenido">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <div id="modalAcercaDe" class="modal">
+            <div class="modal-content">
+                <h4>Acerca de</h4>
+                <h5>Es-Nahuatl</h5>
+                <p>Ayuda en el aprendizaje de los niños y no tan niños en aprender las palabras de una de las lenguas más importantes de México.</p>
+                <p>La aplicación está en crecimiento, el número de palabras es limitada; contantemente se agregan palabras nuevas para resolver las dudas del usuario.</p>
+                <p>Desarrollado por: Gerardo Álvarez Mendoza</p>
+                <p>Contacto: <a href="mailto:gerardam@outlook.com">gerardam@outlook.com</a></p>
+                <p>Imágenes: Diseñados por <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.flaticon.es/autores/madebyoliver">Madebyoliver</a>, distribuido por <a href="http://www.flaticon.es">Flaticon</a></p>
+                <label><span class="Mreg">&reg;</span>2016 D-Bug Develop & Network.</label>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+            </div>
+        </div>
+
+        <footer class="page-footer amber accent-4 white-text footer" style="padding-top: 0; margin-top: 0;">
+            <div class="container" style="margin-top: 0; padding-top: 5px;">
+            </div>
+            <div class="footer-copyright">
+                <div class="container center-align">
+                    <span><span class="Mreg">&reg;</span>2016 D-Bug Develop & Network. Todos los derechos reservados.</span>
+                    <a class="grey-text text-lighten-3 modal-trigger" href="#modalAcercaDe">Acerca de</a>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
